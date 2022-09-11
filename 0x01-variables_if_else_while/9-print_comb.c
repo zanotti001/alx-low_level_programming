@@ -1,18 +1,18 @@
-#include	<stdio.h>
+#include <stdio.h>
 
 /**
- * main	-	Entry point
+ * main	- Entry point
  *
- * Return:Always	0	(Success)
+ * Return:Always 0 (Success)
  */
-int	main(void)
+int main(void)
 {
-	int	d	=48;
+	int d = 48;
 
-	while	(d	<	58)
+	while (d < 58)
 	{
 		putchar(d);
-		if	(d!	=	57)
+		if (d!	= 57)
 		{
 			putchar(',');
 			putchar('');
