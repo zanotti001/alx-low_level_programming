@@ -4,15 +4,14 @@
 /**
  * main - Entry point
  *
- *  Return: Always Success
+ * Return:Always Success
  */
 int main(void)
 {
-
 	int n;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 
-	
+
 		
