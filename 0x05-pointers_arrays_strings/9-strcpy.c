@@ -1,23 +1,21 @@
-#include "main.h"
-
 /**
- * _strcpy - Copy paste string
+ * *_strcpy - copies string to given memory location
  * @dest: destination
  * @src: source
  *
- * Return: destination
+ * Return: char
  */
 
-char *_strcpy(char *dest, char *src)
+char *_strcpy(char *dest, char  *src)
 {
-	int inc = 0;
+	int len = 0;
 
-	while (*(src + inc) != '\0')
+	while (*(src + len) != '\0')
 	{
-		*(dest + inc) = *(src + inc);
-		inc++;
+		*(dest + len) = *(src + len);
+		len++;
 	}
-	*(dest + inc) = '\0';
+	*(dest + len) = *(src + len);
 
 
 	return (dest);
