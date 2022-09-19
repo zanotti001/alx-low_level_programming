@@ -2,11 +2,11 @@
 
 
 /**
- * strlem - return the length of a given string
- *
- * @s: pointer to string to work on
- * Return: string
+ * _strlem - returns the length of a given string
+ * @s: string
+ * Return: returns length as integer;
  */
+
 int _strlen(char *s)
 {
 	int len = 0;
