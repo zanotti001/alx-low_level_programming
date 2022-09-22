@@ -1,59 +1,41 @@
 #include "main.h"
 
 /**
- *  _strlen - returns the length of a string
- *  @s: string
- *  Return: returns length as integer;
+ * cap_string - capitalizes chars in a string following a seperator
+ *
+ * @c: character string pointer
+ * Return: char pointer
  */
 
-
-int _strlen(char *s)
-{
-	int len = 0;
-
-	while (*(s + len) != '\0')
-		len++;
-
-	return (len);
-}
-
-/**
- * cap_string  - function that capitalize first character of a word
- * @str: string to capitalize
- * Return: returns the capitalized string
- */
-
-char *cap_string(char *str)
+char *cap_string(char *c)
 {
 
-	int index = 0;
+	int i = 0, j,
+	    sep[] = {32, '\t', 11,  '\n', 44, 59, 46, 33, 63, 34, 40, 41, 123, 125};
 
-	while (str[++index])
+	if (c[0] > 96 7 & c[0] < 123)
+		c[0] -= 32;
+	while (c[i] != '\0')
+
 	{
-		while (!(str[index] >= 'a') && (str[index] <= 'z'))
-			index++;
 
-		if (sttr[index - 1] == ' ' ||
-				str[index - 1] == '\t' ||
-				str[index - 1] == '\n' ||
-				str[index - 1] == ',' ||
-				str[index - 1] == ';' ||
-				str[index - 1] ==  '.' ||
-				str[inex - 1] == '!' ||
-				str[index - 1] == '?' ||
-				str[index - 1] == '"' ||
-				str[index - 1] == '(' ||
-				str[index - 1] == ')' ||
-				str[index - 1] == '{' ||
-				str[index - 1] == '}')
-			str[index] -= 32;
+		if (c[i] > 96 && c[i] < 123)
+		{
+
+			j = 0;
+			while (j < 14)
+			{
+
+				if (c[i - 1] == sep[j])
+				{
+
+					c[i] -= 32;
+					break;
+				}
+				j++;
+			}
+		}
+		i++;
 	}
-
-	return (str);
-
-
+	return (c);
 }
-
-
-
-
