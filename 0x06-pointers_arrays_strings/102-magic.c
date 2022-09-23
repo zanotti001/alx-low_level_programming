@@ -1,4 +1,12 @@
 #include <stdio.h>
+/**
+* main - Entry point
+*
+* Description:'a program that prints a[2] = 98 follwed by a new line
+*
+* Return: Always 0 (Success)
+*/
+
 
 int main(void)
 {
