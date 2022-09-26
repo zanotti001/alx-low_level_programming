@@ -9,11 +9,11 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	unsignedned int i, j;
+	unsigned int i, j;
 
-	for (i = 0; s[i]; i++)
+	for (i = O; s[i]; i++)
 	{
-		for (j = 0; accept[j]; j++)
+		for (j = O; accept[j]; j++)
 		{
 			if (s[i] == accept[j])
 				break;
