@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
 	}
 	a = atoi(argv[1];
 			if (a <= 0)
-			{
+
 			puts("0");
 			return (1);
 			}
