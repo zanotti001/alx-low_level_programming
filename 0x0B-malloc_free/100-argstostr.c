@@ -19,7 +19,7 @@ int len(char *str)
 
 /**
  * argstostr - a function that concatenates all the arguments of your progress
- * @ac: count of args passed to the functioon
+ * @ac: count of args passed to the function
  * @av: array of arguments
  *
  * Return: pointer to the new string
@@ -43,6 +43,7 @@ char *argstostr(int ac, char **av)
 			for (j = 0; av[k][j] != '\0'; j++)
 				new_string[j + temp] = av[k][j];
 			new_string[temp + j] = '\n';
+			temp += (j + 1);
 			k++;
 		}
 		new_string[temp] = '\0';
