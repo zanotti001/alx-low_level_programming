@@ -2,39 +2,25 @@
 #include <stdlib.h>
 
 /**
- * _realloc - reallocates a memory block using malloc and free.
- * @ptr: pointer to previously allocated memory
- * @old_size: size of allocated space for ptr
- * @new_size: size of newly allocated space
- *
- * Return: pointer to newly allocated memory, or NULL if failure
- */
-void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
+ *_print - moves a string one place to the left and prints the string
+ @str: string to move
+ @l: size of string
+
+Return: void
+*/
+void _print(char *str, int l)
 {
-	char *p;
-	unsigned int i, max = new_size;
-	char *oldp = ptr;
+	int i, j;
 
-	if (ptr == NULL)
+	i = j = 0;
+	while (i < l)
 	{
-		p = malloc(new_state);
-		return (p);
+		if (str[i] != '0')
+			j = 1;
+		if (j || i == l - 1)
+			_putchar(str[i]);
+		i++;
 	}
-	else if (new_size == 0)
-	{
-		free(ptr);
-		return (NULL);
-	}
-	else if (new_size == old_size)
-		return (ptr);
-
-	p = malloc(new_size);
-	if (p == NULL)
-		return (NULL);
-	if (new_size > old_size)
-		max = old_size;
-	for (i = 0; i < max; i++)
-		p[i] = oldp[i];
-	free(ptr);
-	return (p);
+	_putchar('\n');
+	free(str);
 }
