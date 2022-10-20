@@ -2,7 +2,7 @@
 /**
  * add_node - adds a new node at the beginning
  * of a list_t list.
- * @head: head of the  linked list.
+ * @head: head of the linked list.
  * @str: string to store in the list.
  * Return: address of the head.
  */
@@ -21,8 +21,8 @@ list_t *add_node(list_t **head, const char *str)
 	for (n = 0; str[n]; n++)
 		;
 
-	new_mode->len = n;
-	new_mode->next = *head;
+	new_node->len = n;
+	new_node->next = *head;
 	*head = new_mode;
 
 	return (*head);
